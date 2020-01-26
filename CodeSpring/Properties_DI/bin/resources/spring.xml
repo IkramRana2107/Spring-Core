@@ -1,0 +1,13 @@
+
+<beans>
+<bean id="t" class="beans.Test">
+<property name="driver">
+<props>
+<prop key="driverclass">oracle.jdbc.driver.OracleDriver</prop>
+<prop key="url">oracle url</prop>
+<prop key="user">SYSTEM</prop>
+<prop key="password">SYSTEM</prop>
+</props>
+</property>
+</bean>
+</beans>

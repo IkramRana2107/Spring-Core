@@ -1,0 +1,17 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<!--   oracle connection                                            
+ <bean id="t" class="beans.Test" dependency-check="simple">
+ <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+<property name="user" value="SYSTEM"/>
+<property name="password" value="SYSTEM"/>  -->
+<!--   MySql connection        --> 
+<!-- to activate required annotation  -->
+<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+ <bean id="t" class="beans.Test">
+ <property name="driver" value="com.mysql.driver.Driver"/>
+<property name="url" value="jdbc:mysql://localhost:3306/test"/>
+</bean>
+</beans>

@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="t" class="beans.Test" init-method="conInit" destroy-method="conCleanup">
+<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+<property name="username" value="SYSTEM"/>
+<property name="pwd" value="SYSTEM"/>
+</bean>
+</beans>
